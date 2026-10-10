@@ -1,0 +1,220 @@
+@page "/template"
+@rendermode InteractiveServer
+
+<PageTitle>Template</PageTitle>
+
+<div class="tpl-page">
+    <header class="tpl-topbar">
+        <div></div>
+        <div>Welcome, Kashif <a href="#" class="tpl-link">Sign Out</a></div>
+    </header>
+
+    <section class="tpl-header-main">
+        <div class="tpl-logo-card">
+            <div class="tpl-logo-mark">Pak</div>
+            <div>
+                <div class="tpl-logo-title">Community</div>
+                <div class="tpl-logo-sub">detroit</div>
+            </div>
+        </div>
+
+        <div class="tpl-hero-banner">New arrivals in Toys</div>
+
+        <div class="tpl-search-wrap">
+            <input class="tpl-search-input" placeholder="Search here" />
+            <select class="tpl-search-select">
+                <option>Events</option>
+                <option>Classifieds</option>
+                <option>Business</option>
+            </select>
+            <button class="tpl-search-btn">🔍</button>
+        </div>
+    </section>
+
+    <section class="tpl-menu-row">
+        <nav class="tpl-main-nav">
+            <a href="#" class="tpl-link">Business Listing</a>
+            <a href="#" class="tpl-link">Classifieds</a>
+            <a href="#" class="tpl-link">Events</a>
+            <a href="#" class="tpl-link">Info Center</a>
+        </nav>
+
+        <div class="tpl-actions">
+            <button class="tpl-action-btn tpl-action-outline">Post Your Ad</button>
+            <button class="tpl-action-btn tpl-action-solid">List Your Business</button>
+        </div>
+    </section>
+
+    <section class="tpl-breadcrumb">Home &gt; Classified &gt; <span>For Sale</span></section>
+
+    <main class="tpl-content-grid">
+        <aside class="tpl-sidebar">
+            <div class="tpl-category-item"><span>Real Estate</span><span class="tpl-count">3</span></div>
+            <div class="tpl-category-item"><span>Art & Crafts</span><span class="tpl-count">8</span></div>
+            <div class="tpl-category-item"><span>Baby & Kids Stuff</span><span class="tpl-count">5</span></div>
+            <div class="tpl-category-item"><span>Sports & Outdoors</span><span class="tpl-count">3</span></div>
+            <div class="tpl-category-item"><span>Toys and Games</span><span class="tpl-count">2</span></div>
+            <div class="tpl-category-item"><span>Clothing</span><span class="tpl-count">1</span></div>
+            <div class="tpl-category-item"><span>Shoes</span><span class="tpl-count">1</span></div>
+            <div class="tpl-category-item"><span>Accessories</span><span class="tpl-count">1</span></div>
+        </aside>
+
+        <section class="tpl-feed">
+            <div class="tpl-title">List your Ad in this Category</div>
+            <div class="tpl-wide-banner">Kitchen favorites <small>under 50</small></div>
+
+            <div class="tpl-feed-toolbar">
+                <label><input type="checkbox" checked /> Notify me when new ads are posted</label>
+                <select class="tpl-sort">
+                    <option>Posted: Newest First</option>
+                    <option>Posted: Oldest First</option>
+                </select>
+            </div>
+
+            <article class="tpl-listing-card">
+                <h3>Honda Civic 1996-2</h3>
+                <p>
+                    EX available as a coupe or sedan. It includes all standard equipment from the LX plus a 1.6-liter SOHC
+                    VTEC 16-valve 4-cylinder D16Y8 engine producing 127 hp (95 kW), power moonroof, air conditioning, 6-speaker stereo.
+                </p>
+                <div class="tpl-price">$ 1500</div>
+                <div class="tpl-tags">
+                    <span class="tpl-tag">Pontiac</span>
+                    <span>Apr 10, 2025</span>
+                    <button class="tpl-view-btn">View</button>
+                </div>
+            </article>
+
+            <div class="tpl-pagination">
+                <button>&laquo;</button>
+                <button>&lsaquo;</button>
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>...</button>
+                <button>10</button>
+                <button>&rsaquo;</button>
+                <button>&raquo;</button>
+            </div>
+        </section>
+
+        <aside class="tpl-right-rail">
+            <div class="tpl-side-banner tpl-dark">Premium Living</div>
+            <button class="tpl-safety-btn">Read our Safety Tips</button>
+            <div class="tpl-side-banner tpl-bright">Kids Essentials</div>
+        </aside>
+    </main>
+
+    <footer class="tpl-footer-main">
+        <div class="tpl-logo-card tpl-logo-footer">
+            <div class="tpl-logo-mark">Pak</div>
+            <div>
+                <div class="tpl-logo-title">Community</div>
+                <div class="tpl-logo-sub">detroit</div>
+            </div>
+        </div>
+
+        <div class="tpl-socials">◎ &nbsp; ◯ &nbsp; f &nbsp; ▶ &nbsp; ✕ &nbsp; ⓦ</div>
+
+        <div class="tpl-footer-links">
+            <a href="#" class="tpl-link">About</a>
+            <a href="#" class="tpl-link">Contact</a>
+            <a href="#" class="tpl-link">Advertise with us</a>
+            <a href="#" class="tpl-link">FAQs</a>
+        </div>
+    </footer>
+
+    <div class="tpl-footer-bottom">
+        <span>© 2025 All rights reserved.</span>
+        <span>Terms & Policies</span>
+    </div>
+</div>
+
+<style>
+    .tpl-page { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #1f2937; }
+    .tpl-topbar { display: flex; justify-content: space-between; align-items: center; padding: 10px 24px; font-size: 14px; border-bottom: 1px solid #eef2f7; }
+    .tpl-link { color: #4b5563; text-decoration: none; transition: color .2s ease; }
+    .tpl-link:hover { color: #15803d; }
+
+    .tpl-header-main { display: grid; grid-template-columns: 240px 1fr 360px; gap: 16px; align-items: center; padding: 20px 24px; border-bottom: 1px solid #eef2f7; }
+    .tpl-logo-card { display: inline-flex; align-items: center; gap: 10px; }
+    .tpl-logo-mark { background: #15803d; color: #fff; padding: 8px 12px; border-radius: 8px; font-weight: 700; }
+    .tpl-logo-title { font-size: 28px; font-weight: 700; line-height: 1; }
+    .tpl-logo-sub { color: #6b7280; text-transform: lowercase; }
+
+    .tpl-hero-banner { background: linear-gradient(110deg, #ffd54f, #fcd34d, #fbbf24); min-height: 86px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 34px; font-weight: 700; color: #1f2937; box-shadow: 0 10px 24px rgba(0,0,0,.08); }
+
+    .tpl-search-wrap { display: grid; grid-template-columns: 1fr auto auto; border: 1px solid #d1d5db; border-radius: 8px; overflow: hidden; }
+    .tpl-search-input, .tpl-search-select { border: 0; padding: 12px; outline: none; }
+    .tpl-search-btn { border: 0; padding: 0 16px; background: #15803d; color: white; font-size: 18px; transition: background .2s ease; }
+    .tpl-search-btn:hover { background: #166534; }
+
+    .tpl-menu-row { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 24px; border-bottom: 1px solid #eef2f7; }
+    .tpl-main-nav { display: flex; gap: 28px; font-size: 24px; }
+    .tpl-actions { display: flex; gap: 12px; }
+    .tpl-action-btn { border-radius: 8px; padding: 10px 16px; font-size: 14px; cursor: pointer; transition: transform .2s ease, box-shadow .2s ease; }
+    .tpl-action-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(0,0,0,.12); }
+    .tpl-action-outline { border: 1px solid #22c55e; background: white; color: #15803d; }
+    .tpl-action-solid { border: 1px solid #15803d; background: #15803d; color: white; }
+
+    .tpl-breadcrumb { padding: 14px 24px; color: #6b7280; font-size: 14px; }
+    .tpl-breadcrumb span { color: #166534; font-weight: 600; }
+
+    .tpl-content-grid { display: grid; grid-template-columns: 220px 1fr 270px; gap: 22px; padding: 0 24px 24px; }
+
+    .tpl-sidebar { border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden; align-self: start; }
+    .tpl-category-item { display: flex; justify-content: space-between; align-items: center; padding: 14px 12px; border-bottom: 1px solid #f1f5f9; cursor: pointer; transition: background .2s ease, transform .15s ease; }
+    .tpl-category-item:last-child { border-bottom: 0; }
+    .tpl-category-item:hover { background: #f0fdf4; transform: translateX(3px); }
+    .tpl-count { background: #dcfce7; color: #166534; border-radius: 999px; padding: 2px 8px; font-size: 12px; }
+
+    .tpl-feed { display: flex; flex-direction: column; gap: 12px; }
+    .tpl-title { font-size: 38px; font-weight: 600; }
+    .tpl-wide-banner { min-height: 120px; border-radius: 10px; background: linear-gradient(110deg, #fef3c7, #fecdd3); display: flex; align-items: center; justify-content: center; font-size: 34px; font-weight: 700; }
+    .tpl-wide-banner small { display: block; font-size: 20px; text-align: center; }
+
+    .tpl-feed-toolbar { display: flex; justify-content: space-between; align-items: center; color: #6b7280; }
+    .tpl-sort { border: 1px solid #d1d5db; border-radius: 6px; padding: 6px 8px; }
+
+    .tpl-listing-card { border: 1px solid #e5e7eb; border-radius: 10px; padding: 16px; background: white; transition: box-shadow .2s ease, transform .2s ease; }
+    .tpl-listing-card:hover { box-shadow: 0 14px 28px rgba(0,0,0,.09); transform: translateY(-2px); }
+    .tpl-listing-card h3 { margin: 0 0 8px; color: #0f172a; }
+    .tpl-listing-card p { margin: 0 0 10px; color: #4b5563; }
+    .tpl-price { font-size: 34px; font-weight: 700; margin-bottom: 8px; }
+    .tpl-tags { display: flex; align-items: center; gap: 10px; color: #6b7280; }
+    .tpl-tag { background: #dcfce7; color: #166534; border-radius: 6px; padding: 4px 8px; }
+    .tpl-view-btn { border: 1px solid #86efac; color: #166534; background: white; border-radius: 6px; padding: 4px 12px; transition: background .2s ease; }
+    .tpl-view-btn:hover { background: #dcfce7; }
+
+    .tpl-pagination { display: flex; justify-content: center; gap: 8px; }
+    .tpl-pagination button { border: 1px solid #e5e7eb; background: white; border-radius: 6px; min-width: 34px; height: 34px; transition: all .2s ease; }
+    .tpl-pagination button:hover { background: #f0fdf4; border-color: #22c55e; }
+    .tpl-pagination button.active { background: #15803d; color: white; border-color: #15803d; }
+
+    .tpl-right-rail { display: flex; flex-direction: column; gap: 14px; }
+    .tpl-side-banner { min-height: 160px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 26px; font-weight: 700; text-align: center; padding: 12px; }
+    .tpl-dark { background: linear-gradient(135deg, #374151, #111827); }
+    .tpl-bright { background: linear-gradient(135deg, #facc15, #f97316); }
+    .tpl-safety-btn { border: 1px solid #4ade80; background: white; border-radius: 8px; color: #166534; padding: 10px; transition: all .2s ease; }
+    .tpl-safety-btn:hover { background: #f0fdf4; transform: translateY(-1px); }
+
+    .tpl-footer-main { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 16px 24px; border-top: 1px solid #eef2f7; margin-top: 12px; }
+    .tpl-logo-footer .tpl-logo-title { font-size: 22px; }
+    .tpl-socials { color: #6b7280; font-size: 18px; }
+    .tpl-footer-links { display: flex; gap: 18px; }
+    .tpl-footer-bottom { background: #9ca3af; color: white; display: flex; justify-content: space-between; padding: 10px 24px; }
+
+    @@media (max-width: 1200px) {
+        .tpl-header-main { grid-template-columns: 1fr; }
+        .tpl-content-grid { grid-template-columns: 1fr; }
+        .tpl-main-nav { flex-wrap: wrap; }
+    }
+
+    @@media (max-width: 768px) {
+        .tpl-menu-row, .tpl-feed-toolbar, .tpl-footer-main, .tpl-footer-bottom { flex-direction: column; align-items: flex-start; }
+        .tpl-main-nav { gap: 12px; }
+        .tpl-hero-banner { font-size: 24px; }
+        .tpl-wide-banner { font-size: 24px; }
+        .tpl-title { font-size: 28px; }
+    }
+</style>
